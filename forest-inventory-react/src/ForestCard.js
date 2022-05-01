@@ -6,23 +6,23 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import Collapse from '@mui/material/Collapse';
 
-export default function ActionAreaCard() {
+export default function ActionAreaCard(props) {
     const [expanded, setExpanded] = React.useState(false);
     const handleExpandClick = () => {
         setExpanded(!expanded);
       };
+    const forest = props.forest;
     return (
         <Card sx={{ maxWidth: 345 }}>
         <CardActionArea onClick={handleExpandClick}>
             <CardMedia
             component="img"
             height="140"
-            image="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Amazonia.jpg/272px-Amazonia.jpg"
-            alt="Amazon rainforest on the Urubu River"
+            image={forest.imgUrl}
             />
             <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-                Amazon Rain Forest
+                {forest.name}
             </Typography>
             </CardContent>
         </CardActionArea>
