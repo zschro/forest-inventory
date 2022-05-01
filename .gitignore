@@ -1,5 +1,5 @@
 # Byte-compiled / optimized / DLL files
-__pycache__/
+forest-inventory-flask/__pycache__/
 *.py[cod]
 *$py.class
 
@@ -104,11 +104,11 @@ celerybeat.pid
 # Environments
 .env
 .venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
+forest-inventory-flask/env/
+forest-inventory-flask/venv/
+forest-inventory-flask/ENV/
+forest-inventory-flask/env.bak/
+forest-inventory-flask/venv.bak/
 
 # Spyder project settings
 .spyderproject
@@ -127,3 +127,25 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# dependencies
+forest-inventory-react/node_modules
+forest-inventory-react/.pnp
+forest-inventory-react/.pnp.js
+
+# testing
+forest-inventory-react/coverage
+
+# production
+forest-inventory-react/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
