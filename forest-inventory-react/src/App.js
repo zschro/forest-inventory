@@ -4,6 +4,7 @@ import ForestCard from './ForestCard';
 import { useEffect, useState } from 'react'
 import axios from "axios";
 import './App.css';
+import { Container } from '@mui/material';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -14,7 +15,7 @@ function App() {
         setLoading(true);
         try {
           const {data: response} = await axios.get('/forests');
-          setForestData(response.forests);
+          setForestData(response);
         } catch (error) {
           console.error(error.message);
         }
@@ -26,13 +27,15 @@ function App() {
 
   return (
     <div className="App">
-      {loading && <div>Loading</div>}
-      {!loading &&
-        <Stack direction="row" spacing={2}>
-          {forestData.map(forest => (<ForestCard forest={forest}/>))}
-        </Stack>
-      }
-      <Pagination count={10} />
+      <Container>
+        {loading && <div>Loading</div>}
+        {!loading &&
+          <Stack direction="row" spacing={2}>
+            {forestData.map(forest => (<ForestCard forest={forest}/>))}
+          </Stack>
+        }
+        <Pagination count={10} />
+      </Container>
     </div>
   );
 }
