@@ -2,6 +2,7 @@ from models import create_forest
 
 def seed():
     print("Creating sample forests...")
+    #  data taken from https://tree-nation.com/projects
     create_forest("Plant to Stop Poverty, Tanzania","https://tree-nation.com/thumbs/271x203/https://treenation-uploads.s3-accelerate.amazonaws.com/project-62499db34333d.png","Reforestation","The Plant to Stop Poverty project uses an incorporated approach to advice and help peasantry communities in rural areas to practice agroforestry as a way to fight against prevailing poverty and climate change effects. With this mode food and income securities are guaranteed while forests are restored and protected through tree planting. We have a previous experience of planting more than 140.000 trees in other projects in different districts.")
 
     create_forest("Amazon Windshields, Bolivia","https://tree-nation.com/thumbs/271x203/https://treenation-uploads.s3-accelerate.amazonaws.com/project-5e99cc2f8eaf7.JPG","Reforestation","Since year 2000, the Bolivian AMAZON RAINFOREST has lost an area greater than Denmark to agriculture & cattle fields. It is tough to stop that, but we are successfully winning ground by continuously planting trees between fields that work as thick wind shields that have the capacity to stop erosion, bring back the forest and displaced wild life, restore humidity conditions and CO2 sequestration.")
