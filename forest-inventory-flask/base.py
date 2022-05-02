@@ -5,7 +5,7 @@ api = Flask(__name__, static_folder='../build', static_url_path='/')
 api.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///forests.sqlite3'
 db = SQLAlchemy(api)
 
-if __name__ == '__main__':
+if __name__ == '__main__' or __name__ == 'base':
     from views import *
     from models import init
     init()

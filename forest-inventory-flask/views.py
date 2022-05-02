@@ -11,3 +11,7 @@ def forests():
     result = forests_schema.dump(paged_forests.items)
     pagedResult = {"forests": result, "totalPages": paged_forests.pages, "currentPage": paged_forests.page}
     return make_response(pagedResult, 200)
+
+@api.route('/')
+def index():
+    return api.send_static_file('index.html')

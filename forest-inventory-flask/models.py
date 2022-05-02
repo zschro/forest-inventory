@@ -35,6 +35,3 @@ def init():
         from seed import seed
         seed()
     print("Done!")
-
-if __name__ == "__main__":
-    init()
