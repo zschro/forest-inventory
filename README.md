@@ -13,6 +13,6 @@ I would have liked to make the cards sized consistently
 ## Deployment
 To run with docker locally run: `docker build -f Dockerfile -t forest-inventory .`
 Then run: `docker run --rm -p 8003:8003 forest-inventory` and open a browswer to http://localhost:8003/
-The website is deployed to [http://forests-inventory.azurewebsites.net/]http://forests-inventory.azurewebsites.net/
+The website is deployed to [http://forests-inventory.azurewebsites.net/](http://forests-inventory.azurewebsites.net/)
 
 ![Screenshot](Screenshot.jpg)
