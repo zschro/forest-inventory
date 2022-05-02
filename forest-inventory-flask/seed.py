@@ -83,3 +83,6 @@ def seed():
     create_forest("Wiactghana native tree nurseries, Ghana","https://tree-nation.com/thumbs/271x203/https://treenation-uploads.s3-accelerate.amazonaws.com/project-61ca0c8cc83aa.jpg","Reforestation","Generic description")
 
     create_forest("The Haiti Tree Project, Haiti","https://tree-nation.com/thumbs/271x203/https://treenation-uploads.s3-accelerate.amazonaws.com/project-6243138b86971.jpg","Reforestation","Generic description")
+
+if __name__ == "__main__":
+    seed()

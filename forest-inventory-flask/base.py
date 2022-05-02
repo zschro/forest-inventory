@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
-api = Flask(__name__)
+api = Flask(__name__, static_folder='../build', static_url_path='/')
 api.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///forests.sqlite3'
 db = SQLAlchemy(api)
 
