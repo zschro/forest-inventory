@@ -16,9 +16,9 @@ export default function ActionAreaCard(props) {
         <Card sx={{ maxWidth: 345 }}>
         <CardActionArea onClick={handleExpandClick}>
             <CardMedia
-            component="img"
-            height="140"
-            image={forest.imgUrl}
+                component="img"
+                height="140"
+                image={forest.imgUrl}
             />
             <CardContent>
             <Typography gutterBottom variant="h5" component="div">
