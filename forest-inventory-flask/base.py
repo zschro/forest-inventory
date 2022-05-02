@@ -9,4 +9,4 @@ if __name__ == '__main__' or __name__ == 'base':
     from views import *
     from models import init
     init()
-    api.run(debug=True)
+    #api.run(debug=True)

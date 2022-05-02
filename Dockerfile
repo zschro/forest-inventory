@@ -16,6 +16,6 @@ COPY forest-inventory-flask/requirements.txt forest-inventory-flask/*.py forest-
 RUN pip install -r ./api/requirements.txt
 ENV FLASK_ENV production
 
-EXPOSE 5000
+EXPOSE 8003
 WORKDIR /app/api
-CMD ["gunicorn", "-b", ":5000", "base:api"] 
+CMD ["gunicorn", "-w", "2", "--threads", "2", "-b", "0.0.0.0:8003", "base:api"] 
