@@ -8,8 +8,11 @@ To run just the backend you can run `pip install requirements.txt` and then `pyt
 ## React App
 The react app was bootstrapped with create-react-app and styled using material-ui.
 To run just the front end you can run `npm install` and then `npm start`
+I would have liked to make the cards sized consistently
 
 ## Deployment
 To run with docker locally run: `docker build -f Dockerfile -t forest-inventory .`
 Then run: `docker run --rm -p 8003:8003 forest-inventory` and open a browswer to http://localhost:8003/
-The website is deployed to [https://forest-inventory.azurewebsites.net/]https://forest-inventory.azurewebsites.net/
+The website is deployed to [http://forests-inventory.azurewebsites.net/]http://forests-inventory.azurewebsites.net/
+
+![Screenshot](Screenshot.jpg)
